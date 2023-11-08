@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 
 .navbar-inner {
@@ -27,6 +28,7 @@
     height: 100%;
     display: flex;
     padding: 0px 20px; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -74,22 +76,24 @@
 }
 
 .profile-pic img {
-    height: 22px;
-    width: 22px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 
 .navbar-icons-inner {
-    padding: 0 0 0 24px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 10px;
 }
 
-.margin-left {
-    margin-left: 22px;
-}
 .margin-left-small {
     margin-left: 14px;
+}
+
+.logout {
+    margin-left: 0px;
+    padding: 0px 10px;
 }
 
 main {
@@ -300,7 +304,7 @@ main {
 }
 .title {
     font-size: 14px;
-    fontweight: 600;
+    font-weight: 600;
     color: #8e8e8e;
 }
 .see-all-btn {

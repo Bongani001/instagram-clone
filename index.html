@@ -12,7 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile-styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
     <title>Instagram</title>
   </head>
 
@@ -110,6 +114,7 @@
                   src="assets/bongani.jpg"
                 >
               </div>
+              <button class="btn btn-primary logout" type="button">Logout</button>
             </div>
           </div>
         </div>
@@ -844,15 +849,15 @@
               <div class="profile-details-pic">
                 <img
                   class="story-image"
-                  alt="akhilboddu's profile picture"
+                  alt="bongani's profile picture"
                   data-testid="user-avatar"
                   draggable="false"
-                  src="assets/IMG_7469.jpeg"
+                  src="assets/bongani.jpg"
                 />
               </div>
               <div class="user-details">
-                <span class="username">bonganintshangase</span>
-                <span class="name">bongani ntshangase</span>
+                <span class="username">bonganinyaku</span>
+                <span class="name">bongani nyaku</span>
               </div>
             </div>
             <div class="suggestions">
@@ -864,14 +869,14 @@
                 <div class="suggestion-details">
                   <div class="suggestion-pic">
                     <img
-                      alt="imharjotsingh's profile picture"
+                      alt="Mellow's profile picture"
                       data-testid="user-avatar"
                       draggable="false"
-                      src="assets/IMG_0983.jpeg"
+                      src="assets/clouds.jpg"
                     />
                   </div>
                   <div class="suggestion-profile-details">
-                    <span class="profile-name">agnes</span>
+                    <span class="profile-name">mellow</span>
                     <span class="text-muted">New to instagram</span>
                   </div>
                 </div>
@@ -881,14 +886,14 @@
                 <div class="suggestion-details">
                   <div class="suggestion-pic">
                     <img
-                      alt="imharjotsingh's profile picture"
+                      alt="Sleezy's profile picture"
                       data-testid="user-avatar"
                       draggable="false"
-                      src="assets/post1.jpeg"
+                      src="assets/kites.jpg"
                     />
                   </div>
                   <div class="suggestion-profile-details">
-                    <span class="profile-name">mathema</span>
+                    <span class="profile-name">sleezy</span>
                     <span class="text-muted">New to instagram</span>
                   </div>
                 </div>
@@ -898,14 +903,14 @@
                 <div class="suggestion-details">
                   <div class="suggestion-pic">
                     <img
-                      alt="imharjotsingh's profile picture"
+                      alt="payas's profile picture"
                       data-testid="user-avatar"
                       draggable="false"
-                      src="assets/post.png"
+                      src="assets/clouds.jpg"
                     />
                   </div>
                   <div class="suggestion-profile-details">
-                    <span class="profile-name">deric</span>
+                    <span class="profile-name">payas</span>
                     <span class="text-muted">New to instagram</span>
                   </div>
                 </div>
@@ -915,14 +920,14 @@
                 <div class="suggestion-details">
                   <div class="suggestion-pic">
                     <img
-                      alt="imharjotsingh's profile picture"
+                      alt="bianca's profile picture"
                       data-testid="user-avatar"
                       draggable="false"
-                      src="assets/IMG_0225.JPG"
+                      src="assets/kites.jpg"
                     />
                   </div>
                   <div class="suggestion-profile-details">
-                    <span class="profile-name">azania</span>
+                    <span class="profile-name">bianca</span>
                     <span class="text-muted">New to instagram</span>
                   </div>
                 </div>
@@ -934,5 +939,31 @@
         </div>
       </main>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCupEX6c_sDDBVFaN0Fxxd4Aqu6s_Ba_r4",
+          authDomain: "instagram-clone4.firebaseapp.com",
+          projectId: "instagram-clone4",
+          storageBucket: "instagram-clone4.appspot.com",
+          messagingSenderId: "736434515073",
+          appId: "1:736434515073:web:a052d7766cea09ef8e7180"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+      </script>
+      <script src="./app.js"></script>
   </body>
 </html>
